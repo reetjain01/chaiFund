@@ -110,4 +110,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## Contact
 
-For any inquiries or feedback, please contact us at [jainreet112@gmail.com]jainreet112@gmail.com .
+For any inquiries or feedback, please contact us at jainreet112@gmail.com .
