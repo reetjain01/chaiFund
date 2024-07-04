@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ChaiFund
+
+ChaiFund is a dedicated crowdfunding platform designed to fuel the creativity of innovators and creators. Join us to bring your projects to life with the support of a vibrant community.
+
+## Features
+
+- **Authentication**: Secure login and registration via NextAuth.js.
+- **Profile Update**: Users are redirected to update their profile for dashboard and Razorpay process after logging in.
+- **Dashboard**: Personalized dashboard displaying user information and activities.
+- **Leaderboard**: A leaderboard showcasing top contributors and their contribution amounts.
+- **Payment Processing**: Seamless payment transfers using Razorpay as the payment gateway.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ensure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js
+- npm (Node Package Manager)
+- MongoDB (or any preferred database)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/chaifund.git
+    cd chaifund
+    ```
 
-## Learn More
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Set up environment variables:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Create a `.env` file in the root directory with the following variables:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```env
+    NEXTAUTH_URL=http://localhost:3000
+    NEXTAUTH_SECRET=your-nextauth-secret
+    DATABASE_URL=your-database-url
+    RAZORPAY_KEY_ID=your-razorpay-key-id
+    RAZORPAY_KEY_SECRET=your-razorpay-key-secret
+    ```
 
-## Deploy on Vercel
+4. Run the development server:
+    ```sh
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Usage
+
+1. **Authentication**:
+    - Navigate to the login/register page.
+    - Register a new account or log in with an existing account using NextAuth.js.
+
+2. **Profile Update**:
+    - After logging in, you will be redirected to a form to update your profile.
+    - Complete the form to update your dashboard and Razorpay process information.
+
+3. **Dashboard**:
+    - After updating your profile, you will be redirected to your personalized dashboard.
+    - Your username and other relevant information will be displayed here.
+
+4. **Leaderboard**:
+    - The dashboard includes a leaderboard section.
+    - This section displays details of top contributors and their contribution amounts.
+
+5. **Payment Processing**:
+    - Use the payment option provided in the dashboard to transfer money using Razorpay.
+    - Follow the on-screen instructions to complete the payment process securely.
+
+### Project Structure
+
+├── components
+│ ├── Auth
+│ ├── Dashboard
+│ ├── Leaderboard
+│ └── Payment
+├── pages
+│ ├── api
+│ │ └── auth
+│ ├── auth
+│ │ ├── login.js
+│ │ └── register.js
+│ ├── dashboard.js
+│ ├── index.js
+│ └── profile.js
+├── public
+│ └── images
+├── styles
+│ ├── globals.css
+│ └── Home.module.css
+└── .env
+
+
+### Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+### License
+
+This project is licensed under the MIT License.
+
+### Contact
+
+For any inquiries or feedback, please contact us at support@chaifund.com.
+
