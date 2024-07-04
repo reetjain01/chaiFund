@@ -48,9 +48,10 @@ Ensure you have the following installed:
 
 3.  Set up environment variables:
 
-        Create a `.env` file in the root directory with the following variables:
+     Create a `.env` file in the root directory with the following variables:
 
-        ```env
+     ```env
+    
         GITHUB_ID=your-github-developer-id
         GITHUB_SECRET=your-github-developer-secret
         NEXT_PUBLIC_KEY_ID=your-razorpay-id
@@ -59,11 +60,9 @@ Ensure you have the following installed:
         NEXTAUTH_URL=http://localhost:3000
         NEXTAUTH_SECRET=your-nextauth-secret
 
-    ```
+     ```
 
-    ```
-
-4.  Run the development server:
+5.  Run the development server:
 
     ```sh
     npm run dev
