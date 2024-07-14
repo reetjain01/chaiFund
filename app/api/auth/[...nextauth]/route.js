@@ -11,7 +11,8 @@ export const authOptions =  NextAuth({
       // OAuth authentication providers...
       GitHubProvider({
         clientId: process.env.GITHUB_ID,
-        clientSecret: process.env.GITHUB_SECRET
+        clientSecret: process.env.GITHUB_SECRET,
+        redirect_uri:"https://chai-fund.vercel.app/api/auth/callback/github"
       }),
     //   AppleProvider({
     //     clientId: process.env.APPLE_ID,
