@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -8,7 +9,7 @@ export default function Home() {
         <div className=" font-bold text-5xl flex gap-3 justify-center items-center ">
           Buy Me a Chai
           <span>
-            <img src="/tea.png" alt="tea image" width={80} />
+            <Image src="/tea.png" alt="tea image" width={80} />
           </span>
         </div>
         <p className=" text-lg">
@@ -42,7 +43,7 @@ export default function Home() {
         </h1>
         <div className=" flex gap-4 justify-around">
           <div className="item space-y-3 flex flex-col justify-center items-center">
-            <img
+            <Image
               className="bg-slate-400 rounded-full p-2 text-black"
               src="/man.png"
               alt=""
@@ -52,7 +53,7 @@ export default function Home() {
             <p className=" text-center">Your fans are available for you to help</p>
           </div>
           <div className="item space-y-3 flex flex-col justify-center items-center">
-            <img
+            <Image
               className="bg-slate-400 rounded-full p-2 text-black"
               src="/coin.png"
               alt=""
@@ -62,7 +63,7 @@ export default function Home() {
             <p className=" text-center">Your fans are available for you to help</p>
           </div>
           <div className="item space-y-3 flex flex-col justify-center items-center">
-            <img
+            <Image
               className="bg-slate-400 rounded-full p-2 text-black"
               src="/group.png"
               alt=""

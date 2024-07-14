@@ -8,6 +8,7 @@ import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 import { Bounce } from "react-toastify";
 import {useRouter} from 'next/navigation'
+import Image from "next/image";
 
 
 const PaymentPage = ({ username }) => {
@@ -103,13 +104,13 @@ const PaymentPage = ({ username }) => {
       <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
 
       <div className="cover w-full relative">
-        <img
+        <Image
           className=" object-cover w-full h-[340px]"
           src={currentUser.coverpic}
           alt=""
         />
         <div className=" absolute -bottom-14 right-[47%] border-2 border-white rounded-full">
-          <img
+          <Image
             width={100}
             height={100}
             src={currentUser.profilepic}
@@ -130,8 +131,8 @@ const PaymentPage = ({ username }) => {
               {payments.length == 0 && <li>No Paymenys Yet</li>}
               {payments.map((p, i) => {
                 return (
-                  <li className=" my-3 flex gap-2 items-center">
-                    <img src="/avatar.png" width={25} alt="" />
+                  <li className=" my-3 flex gap-2 items-center" key={i}>
+                    <Image src="/avatar.png" width={25} alt="" />
                     <span>
                       {p.name} donated ₹
                       <span className="font-bold">{p.amount} </span>
