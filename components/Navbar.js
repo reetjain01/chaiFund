@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className=" bg-gray-900 text-white flex justify-between px-4 md:h-16 flex-col md:flex-row items-center">
       <div className='md:text-xl text-lg md:mt-0 m-2'>
         <Link className="logo font-bold text-xl flex justify-center items-center gap-1" href={"/"}>
-          <Image src="/tea.png" width={45} alt="" />
+          <Image src="/tea.png" width={45} height={45} alt="" />
           <span>ChaiFund</span>
         </Link>
       </div>

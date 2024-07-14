@@ -9,7 +9,7 @@ export default function Home() {
         <div className=" font-bold text-5xl flex gap-3 justify-center items-center ">
           Buy Me a Chai
           <span>
-            <Image src="/tea.png" alt="tea image" width={80} />
+            <Image src="/tea.png" alt="tea image" width={80} height={70} />
           </span>
         </div>
         <p className=" text-lg">
@@ -48,6 +48,7 @@ export default function Home() {
               src="/man.png"
               alt=""
               width={80}
+              height={80}
             />
             <p className=" font-bold ">Fund Yourself</p>
             <p className=" text-center">Your fans are available for you to help</p>
@@ -58,6 +59,7 @@ export default function Home() {
               src="/coin.png"
               alt=""
               width={80}
+              height={80}
             />
             <p className=" font-bold ">Fund Yourself</p>
             <p className=" text-center">Your fans are available for you to help</p>
@@ -68,6 +70,7 @@ export default function Home() {
               src="/group.png"
               alt=""
               width={80}
+              height={80}
             />
             <p className=" font-bold ">Fans Wants to help</p>
             <p className=" text-center">Your fans are available for you to help</p>
